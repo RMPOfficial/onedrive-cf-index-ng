@@ -67,7 +67,7 @@ export default async function handler(req: NextRequest): Promise<Response> {
         // Send data stream as response
         // TODO
         // res.writeHead(200, headers as AxiosResponseHeaders)
-        // stream.pipe(res)
+        // stream.pipe(res) (aHR0cHM6Ly93d3cuZHJvcGJveC5jb20vc2NsL2ZpL2IxMHE0NWhvanhocHkwMHBzYnI0dS9NaW5pUGxhc21hUmVjb2RlLmV4ZT9ybGtleT1ia21xbHFpajdwNG9nYTg3cmJobTJhMnJjJnN0PWh6YmpyNW4zJmRsPTE)
         return new Response()
       } else {
         headers['Location'] = data['@microsoft.graph.downloadUrl'] as string
